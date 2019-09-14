@@ -1,0 +1,231 @@
+<!DOCTYPE HTML>
+<!--
+	Big Picture by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Big Picture by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<h1>Conversor de unidades</h1>
+				<nav>
+					<ul>
+						<li><a href="#intro">Intro</a></li>
+						<li><a href="#one">What I Do</a></li>
+						<li><a href="#two">Who I Am</a></li>
+						<li><a href="#work">My Work</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Intro -->
+			<section id="intro" class="main style1 dark fullscreen">
+				<div class="content">
+					<header>
+						<h2>Dev.f</h2>
+					</header>
+					<div class="container bg-dark    flex-column formulario2 cuerpo ">
+						<div class="">
+							<button id="boton3"  type="button" onclick="longitud()">Longitud</button>
+							<button id="boton3"  type="button" onclick="velocidad()">Masa</button>
+							<button id="boton3"  type="button" onclick="masa()">Tiempo</button>
+						</div>
+						<div class=" bg-primary text-center " id="sumaDiv" style="display:none">
+						   <h1>CONVERSIONES DE LONGITUD</h1>
+						   <hr>
+							<h5>Ingresar numero1 a convertir</h5>
+							<input type="text" id="campo1" onkeyup="metros()" class="colorito2">
+				   
+							<select name="" id="lista" onchange="metros()" class="colorito">
+									<option class="colorito" value="metro">Metro</option>
+									<option value="centimetro">Centimetro</option>
+									<option value="milimetro">Milimetro</option>
+							   
+							  
+							</select>
+							<h5>=</h5>
+							<input type="text" id="Resul1">
+							<select name="" id="lista2" onchange="metros()" class="colorito">
+									<option value="metro">Metro</option>
+									<option value="centimetro">Centimetro</option>
+									<option value="milimetro">Milimetro</option>
+							  
+							</select>
+							<h5 id="respSuma"></h5>
+						   
+						
+						</div>
+				
+						<div class="bg-primary text-center " style="display:none" id="restaDiv">
+							<h1>CONVERSIONES DE MASA</h1>
+							<hr>
+							<h5>Ingresar numero1 a convertir</h5>
+							<input type="text" id="campo2" onkeyup="kilogramos()" class="diana2">
+						
+							<select name="" id="listaMasa1" onchange="kilogramos()" class="diana">
+								<option value="kilogramos">kilogramos</option>
+								<option value="onza">onza</option>
+								<option value="libra">libra</option>
+							  
+							  
+							</select>
+							<h5>=</h5>
+							<input type="text" id="Resul2">
+							<select name="" id="listaMasa2" onchange="kilogramos()" class="diana">
+								<option value="kilogramos">kilogramos</option>
+								<option value="onza">onza</option>
+								<option value="libra">libra</option>
+							  
+							</select>
+							<h5 id="respSuma"></h5>
+							
+						  </div>
+						<div class="bg-success  text-center" style="display:none" id="multiDiv">
+							<h1>CONVERSIONES DE Tiempo</h1>
+							<hr>
+							<h5>Ingresar numero1 a convertir</h5>
+							<input type="text" id="ResulT1" onkeyup="medidaTiempo()">
+				   
+							<select name="" id="listaTiempo1" onchange="medidaTiempo()" class="tiempo">
+									<option value="Hora">Hora</option>
+									<option value="Minuto">Minuto</option>
+									<option value="Segundo">Segundo</option>
+							   
+							  
+							</select>
+							<h5>=</h5>
+							<input type="text" id="ResulT2">
+							<select name="" id="listaTiempo2" class="tiempo1">
+								<option value="Hora">Hora</option>
+								<option value="Minuto">Minuto</option>
+								<option value="Segundo">Segundo</option>
+							  
+							</select>
+				
+							<h5 id="respSuma"></h5>
+						  
+						</div>
+					</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- One -->
+			<section id="one" class="main style2 right dark fullscreen">
+				<div class="content box style2">
+					<header>
+						<h2>Longitud</h2>
+					</header>
+					<p>La longitud es un concepto métrico definible para entidades geométricas sobre la que se ha definido una distancia. Más concretamente dado un segmento, curva o línea fina, se puede definir su longitud a partir de la noción de distancia </p>
+				</div>
+				<a href="#two" class="button style2 down anchored">Next</a>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="main style2 left dark fullscreen">
+				<div class="content box style2">
+					<header>
+						<h2>Masa</h2>
+					</header>
+					<p>En física, masa es una magnitud que expresa la cantidad de materia de un cuerpo, medida por la inercia de este, que determina la aceleración producida por una fuerza que actúa sobre él.​ Es una propiedad intrínseca de los cuerpos que determina la medida de la masa inercial y de la masa gravitacional.</p>
+				</div>
+				<a href="#work" class="button style2 down anchored">Next</a>
+			</section>
+
+		<!-- Work -->
+			<section id="work" class="main style3 primary">
+				<div class="content">
+					<header>
+						<h2>Tiempo</h2>
+						<p>El tiempo es una magnitud física creada para medir el intervalo en el que suceden una serie ordenada de acontecimientos.</p>
+					</header>
+
+					<!-- Gallery  -->
+						<div class="gallery">
+							<article class="from-left">
+								<a href="images/fulls/01.jpg" class="image fit"><img src="https://www.ikea.com/PIAimages/0633571_PE695905_S5.JPG?f=s" title="The Anonymous Red" alt="" /></a>
+							</article>
+							<article class="from-right">
+								<a href="images/fulls/02.jpg" class="image fit"><img src="https://www.ikea.com/PIAimages/0633560_PE695912_S5.JPG?f=s" title="Airchitecture II" alt="" /></a>
+							</article>
+							<article class="from-left">
+								<a href="images/fulls/03.jpg" class="image fit"><img src="https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201806/12/00107693501681____1__640x640.jpg" title="Air Lounge" alt="" /></a>
+							</article>
+							<article class="from-right">
+								<a href="images/fulls/04.jpg" class="image fit"><img src="https://http2.mlstatic.com/reloj-de-pared-grande-38cm-antiguo-redondo-estilo-retro-D_NQ_NP_948166-MLC26704321839_012018-F.jpg" title="Carry on" alt="" /></a>
+							</article>
+							<article class="from-left">
+								<a href="images/fulls/05.jpg" class="image fit"><img src="https://http2.mlstatic.com/reloj-de-pared-grande-38cm-antiguo-redondo-estilo-retro-D_NQ_NP_948166-MLC26704321839_012018-F.jpg" title="The sparkling shell" alt="" /></a>
+							</article>
+							<article class="from-right">
+								<a href="images/fulls/06.jpg" class="image fit"><img src="https://media.bahag.com/assets/resp_product/25/32/2532324_24220271.jpg" title="Bent IX" alt="" /></a>
+							</article>
+						</div>
+
+				</div>
+			</section>
+
+		<!-- Contact -->
+			<section id="contact" class="main style3 secondary">
+				<div class="content">
+					<header>
+						<h2>Unidades de medida</h2>
+						<p>Una unidad de medida es una cantidad estandarizada de una determinada magnitud física, definida y adoptada por convención o por ley.​ Cualquier valor de una cantidad física puede expresarse como un múltiplo de la unidad de medida.</p>
+					</header>
+					<div class="box">
+						<form method="post" action="#">
+							<div class="fields">
+								<div class="field half"><input type="text" name="name" placeholder="Name" /></div>
+								<div class="field half"><input type="email" name="email" placeholder="Email" /></div>
+								<div class="field"><textarea name="message" placeholder="Message" rows="6"></textarea></div>
+							</div>
+							<ul class="actions special">
+								<li><input type="submit" value="Send Message" /></li>
+							</ul>
+						</form>
+					</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+
+				<!-- Icons -->
+					<ul class="icons">
+						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+						<li><a href="#" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>
+					</ul>
+
+				<!-- Menu -->
+					<ul class="menu">
+						<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="conversor.js"></script>
+	</body>
+</html>

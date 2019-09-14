@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel= "stylesheet" href= "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity= "sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin= "anonymous" >
+     <script src= "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity= "sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin= "anonymous" ></script> 
+     <link rel="stylesheet" href="conversor.css">
+    <title>Document</title>
+</head>
+<body class="bg-secondary ">
+    <div class="container bg-dark    flex-column formulario2 cuerpo ">
+        <div class="">
+            <button id="boton3"  type="button" onclick="longitud()">Longitud</button>
+            <button id="boton3"  type="button" onclick="velocidad()">Masa</button>
+            <button id="boton3"  type="button" onclick="masa()">Tiempo</button>
+        </div>
+        <div class=" bg-primary text-center " id="sumaDiv" style="display:none">
+           <h1>CONVERSIONES DE LONGITUD</h1>
+           <hr>
+            <h5>Ingresar numero1 a convertir</h5>
+            <input type="text" id="campo1" onkeyup="metros()">
+   
+            <select name="" id="lista" onchange="metros()">
+                    <option value="metro">Metro</option>
+                    <option value="centimetro">Centimetro</option>
+                    <option value="milimetro">Milimetro</option>
+               
+              
+            </select>
+            <h5>=</h5>
+            <input type="text" id="Resul1">
+            <select name="" id="lista2" onchange="metros()">
+                    <option value="metro">Metro</option>
+                    <option value="centimetro">Centimetro</option>
+                    <option value="milimetro">Milimetro</option>
+              
+            </select>
+            <h5 id="respSuma"></h5>
+           
+        
+        </div>
+
+        <div class="bg-primary text-center " style="display:none" id="restaDiv" >
+            <h1>CONVERSIONES DE MASA</h1>
+            <hr>
+            <h5>Ingresar numero1 a convertir</h5>
+            <input type="text" id="valor1" onkeyup="medidaMasa()">
+   
+            <select name="" id="lista_masa1" onchange="medidaMasa()">
+                    <option value="Kilogramo">Kilogramo</option>
+                    <option value="Gramo">Gramo</option>
+                    <option value="Miligramo">Miligramo</option>
+               
+              
+            </select>
+            <h5>=</h5>
+            <input type="text" id="valor2">
+            <select name="" id="lista_masa2">
+                <option value="Kilogramo">Kilogramo</option>
+                <option value="Gramo">Gramo</option>
+                <option value="Miligramo">Miligramo</option>              
+            </select>
+            <h5 id="respMasa"></h5>
+           
+        </div>
+        <div class="bg-success  text-center" style="display:none" id="multiDiv" ">
+            <h1>CONVERSIONES DE Tiempo</h1>
+            <hr>
+            <h5>Ingresar numero1 a convertir</h5>
+            <input type="text" id="ResulT1">
+   
+            <select name="" id="listaTiempo1" onchange="medidaTiempo()">
+                    <option value="Hora">Hora</option>
+                    <option value="Minuto">Minuto</option>
+                    <option value="Segundo">Segundo</option>
+               
+              
+            </select>
+            <h5>=</h5>
+            <input type="text" id="ResulT2">
+            <select name="" id="listaTiempo2">
+                <option value="Hora">Hora</option>
+                <option value="Minuto">Minuto</option>
+                <option value="Segundo">Segundo</option>
+              
+            </select>
+            <h5 id="respSuma"></h5>
+          
+        </div>
+    </div>
+    
+
+    <script src= "https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity= "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin= "anonymous" ></script> <script src= "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity= "sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin= "anonymous" ></script> 
+    <script src="conversor.js"></script>
+</body>
+</html>
